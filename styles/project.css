@@ -1,0 +1,85 @@
+/* =====================
+    PAGE CONTAINER
+===================== */
+body{
+    margin:0;
+    padding: 2rem;
+}
+
+/* =====================
+GENERAL SECTION STYLE
+===================== */
+section{
+    padding: 1rem;
+    margin-bottom:1.5rem;
+}
+
+/* =====================
+PROJECT LAYOUT
+===================== */
+.core-proj-info{
+    width: 100%;
+}
+
+/* Two-column middle section */
+
+.project-middle {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.project-middle > section {
+    min-width: 0;
+}
+
+.project-middle > section:first-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
+/* Bottom section */
+
+.game-clips {
+    width: 100%;
+}
+
+.clip-area {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.clip-card {
+    border: 1px solid;
+    flex: 1 1 320px;
+    min-width: 280px;
+}
+
+/* =====================
+MEDIA
+===================== */
+
+iframe {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================
+MOBILE
+===================== */
+
+@media (max-width: 768px) {
+    .project-middle {
+        grid-template-columns: 1fr;
+    }
+
+    .project-middle > section:first-child:nth-child(odd) {
+        grid-column: auto;
+    }
+}

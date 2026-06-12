@@ -3,95 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" />
+    <link href="./styles/theme.css" rel="stylesheet" />
+    <link href="./styles/project.css" rel="stylesheet" />
     <title>Capstone Project - A Ranching Sim</title>
 </head>
 <body>
-    <h1>Capstone Project - A Ranching Sim</h1>
-    <p>Link to <a href="https://github.com/Pixellette/Ranching-Sim-Game---2"> GitHub Repository </a></p>
-    <h3>About the Project</h3>
-    <p>
-        As a part of my Bachelor of Information Sciences at Massey University I did a Capstone Project. <br>
-        I decided to create a game in Unity to explore creating realistic animal behaviour
-        in video games through the use of Boids.
-    </p>
-    <h3>Features</h3>
-    <ul>
-        <li>
-            <b>Flocking Mechanics</b>
-            <p>Boid priciples were used to implement natural flocking of animals, 
-                with specific behaviours for seperation, alignment and cohesion. 
+    <!-- Core Project Info -->
+    <section class="core-proj-info">
+        <h1>Capstone Project - A Ranching Sim</h1>
+        <p>Link to <a href="https://github.com/Pixellette/Ranching-Sim-Game---2"> GitHub Repository </a></p>
+        <h3>About the Project</h3>
+        <p>
+            As a part of my Bachelor of Information Sciences at Massey University I did a Capstone Project. <br>
+            I decided to create a game in Unity to explore creating realistic animal behaviour
+            in video games through the use of Boids.
+        </p>
+    </section>
+
+    <!-- Middle Section:Project Features and Functionality -->
+    <div class="project-middle">
+
+        <!-- Gameplay -->
+        <section class="gameplay">
+            <h3>Gameplay Overview</h3>
+            <p>
+                In <i>Peaceful Plains</i>, you manage herds of animals, 
+                build paddocks, and explore a dynamic environment where animals 
+                exhibit natural flocking behavior. 
+                You can use <b>Play Mode</b> for regular gameplay or enter 
+                <b>Build Mode</b> to design paddocks and manage the area effectively.
             </p>
-        </li>
-        <li>
-            <b>Build Mode</b>
-            <p>Allows players to build fences and gates to create paddocks and manage the animals effectively.</p>
-        </li>
-        <li>
-            <b>Player Interaction</b>
-            <p>Players can use a Shout command to influence animal movement and engage with the environment.</p>
-        </li>
-        <li>
-            <b>Varied Animal Behaviour</b>
-            <p>Animals have different hunger levels, wander and seek food independently, and exhibit realistic group dynamics.</p>
-        </li>
-    </ul>
+        </section>
 
-    <h3>Gameplay Overview</h3>
-    <p>
-        In <i>Peaceful Plains</i>, you manage herds of animals, 
-        build paddocks, and explore a dynamic environment where animals 
-        exhibit natural flocking behavior. 
-        You can use <b>Play Mode</b> for regular gameplay or enter 
-        <b>Build Mode</b> to design paddocks and manage the area effectively.
-    </p>
+        <!-- Project Features -->
+        <section class="proj-features">
+            <h3>Features</h3>
+            <ul>
+                <li>
+                    <b>Flocking Mechanics</b>
+                    <p>Boid priciples were used to implement natural flocking of animals, 
+                        with specific behaviours for seperation, alignment and cohesion. 
+                    </p>
+                </li>
+                <li>
+                    <b>Build Mode</b>
+                    <p>Allows players to build fences and gates to create paddocks and manage the animals effectively.</p>
+                </li>
+                <li>
+                    <b>Player Interaction</b>
+                    <p>Players can use a Shout command to influence animal movement and engage with the environment.</p>
+                </li>
+                <li>
+                    <b>Varied Animal Behaviour</b>
+                    <p>Animals have different hunger levels, wander and seek food independently, and exhibit realistic group dynamics.</p>
+                </li>
+            </ul>
+        </section>
 
-    <h3>Controls</h3>
-    <h4>Play Mode</h4>
-    <ul>
-        <li>
-            <b>WASD:</b> Move the player (W/S for forward/back, A/D for strafe left/right).
-        </li>
-        <li><b>Mouse:</b> Look around.</li>
-        <li><b>Shift:</b> Run.</li>
-        <li><b>Spacebar:</b> Jump.</li>
-        <li><b>TAB:</b> Open the pause menu.</li>
-        <li><b>Right Mouse Button:</b> Use the shout command to influence animals.</li>
-        <li><b>B Key:</b> Enter Build Mode.</li>
-    </ul>
-    <h4>Build Mode</h4>
-    <ul>
-        <li><b>WASD:</b> Move the camera (up/down/left/right).</li>
-        <li><b>R/F:</b> Zoom the camera in/out.</li>
-        <li><b>Q/E:</b> Rotate the selected object.</li>
-        <li><b>UI Buttons:</b> Switch between placing fences or gates, and toggle between place and delete modes.
-            <br><i><b>Note:</b> There is a known bug where switching directly from delete mode to placing a gate or fence can cause the current build mode to break.</i></li>
-        <li><b>TAB:</b> Open the pause menu.</li>
-    </ul>
+        <!-- Controls -->
+        <section class="Controls">
+            <h3>Controls</h3>
+            <h4>Play Mode</h4>
+            <ul>
+                <li>
+                    <b>WASD:</b> Move the player (W/S for forward/back, A/D for strafe left/right).
+                </li>
+                <li><b>Mouse:</b> Look around.</li>
+                <li><b>Shift:</b> Run.</li>
+                <li><b>Spacebar:</b> Jump.</li>
+                <li><b>TAB:</b> Open the pause menu.</li>
+                <li><b>Right Mouse Button:</b> Use the shout command to influence animals.</li>
+                <li><b>B Key:</b> Enter Build Mode.</li>
+            </ul>
+            <h4>Build Mode</h4>
+            <ul>
+                <li><b>WASD:</b> Move the camera (up/down/left/right).</li>
+                <li><b>R/F:</b> Zoom the camera in/out.</li>
+                <li><b>Q/E:</b> Rotate the selected object.</li>
+                <li><b>UI Buttons:</b> Switch between placing fences or gates, and toggle between place and delete modes.
+                    <br><i><b>Note:</b> There is a known bug where switching directly from delete mode to placing a gate or fence can cause the current build mode to break.</i></li>
+                <li><b>TAB:</b> Open the pause menu.</li>
+            </ul>
+        </section>
+    </div>
 
-    <h3>Game Clips</h3>
-    <ul>
-        <li>
-            Example video showing baby animals:<br>
-            <iframe 
-                width="560" height="315" 
-                src="https://www.youtube.com/embed/ShkFyBb6iUI?si=mEIR7mvQXvgBIXtl" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-        </li>
-        <li>Example video showing build mode: <br>
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/Whe-SfJbLc4?si=7JWBfk_OSJV-5MwG" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-            </iframe>
-        </li>
-    </ul>
+    <!-- Clips -->
+    <section class="game-clips">
+        <h3>Game Clips</h3>
+        <div class="clip-area">
+            <div class="clip-card">
+                <p>Example video showing baby animals:</p>
+                <iframe 
+                        width="560" height="315" 
+                        src="https://www.youtube.com/embed/ShkFyBb6iUI?si=mEIR7mvQXvgBIXtl" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="clip-card">
+                <p>Example video showing build mode:</p>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/Whe-SfJbLc4?si=7JWBfk_OSJV-5MwG" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
     <a href="./index.html">Back to Portfolio</a>
 </body>

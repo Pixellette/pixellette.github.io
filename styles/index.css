@@ -1,0 +1,41 @@
+body{
+    /* ==== LAYOUT ==== */
+    margin: 0;
+    padding: 20px;
+
+    /* Grid layout */
+    display: grid;
+
+    /* Two columns */
+    grid-template-columns: 2fr 1fr;
+
+    /* Two rows */
+    grid-template-rows: auto auto;
+
+    /* Space between sections */
+    gap: 20px;
+
+    /* Full screen height */
+    min-height: 100vh;
+
+    box-sizing: border-box;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Keep image responsive */
+.profile-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Mobile friendly design */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}

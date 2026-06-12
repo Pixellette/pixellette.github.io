@@ -3,6 +3,14 @@ body{
     color:#bb7480;
 }
 
+section {
+    padding: 1px, 4px, 4px, 4px;
+    border: 4px double #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 h1{
     color: #374442;
     background-color:  #dedbd2;

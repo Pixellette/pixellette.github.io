@@ -26,7 +26,7 @@ PROJECT LAYOUT
 .project-middle {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     align-items: start;
 }
 
@@ -52,7 +52,9 @@ PROJECT LAYOUT
 }
 
 .clip-card {
+    padding: 1rem;
     border: 1px solid;
+    border-radius: 8px;
     flex: 1 1 320px;
     min-width: 280px;
 }

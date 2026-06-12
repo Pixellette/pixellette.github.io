@@ -1,7 +1,7 @@
 body{
     /* ==== LAYOUT ==== */
     margin: 0;
-    padding: 20px;
+    padding: 16px;
 
     /* Grid layout */
     display: grid;
@@ -13,25 +13,59 @@ body{
     grid-template-rows: auto auto;
 
     /* Space between sections */
-    gap: 20px;
+    gap: 16px;
 
-    /* Full screen height */
-    min-height: 100vh;
+    /* Let the page size itself to the content */
+    min-height: auto;
+    align-items: start;
     box-sizing: border-box;
 }
 
 section {
-    padding: 20px;
+    padding-top:8px;
+    padding-bottom:16px;
+    padding-left:16px;
+    padding-right:16px;
     border: 4px double #ccc;
     border-radius: 8px;
     background-color: #fff;
+    align-self: start;
+    height: auto;
 }
 
-/* Keep image responsive */
-.profile-section img {
+/* Profile picture section */
+.profile-pic-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(280px, 100%);
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 4px double #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #d9c3b7;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f4ece7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Mobile friendly design */

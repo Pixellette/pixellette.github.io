@@ -2,6 +2,7 @@
     --dark-green: #595E48;
     --medium-green: #919682;
     --light-green: #C7CDBF;
+    --off-green: #F0E1D4;
     --light-pink: #EECFCA;
     --dark-pink: #DCA198;
     --light-brown: #C7A491;
@@ -34,14 +35,20 @@ General Settings
 .button {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid var(--light-brown);
+    border: 2px solid var(--cream);
     border-radius: 30px;
-    background-color: var(--light-pink);
+    background: linear-gradient(to bottom right, var(--dark-pink), var(--dark-brown));
     text-decoration: none;
 }
+.button:hover{
+    background: linear-gradient(to bottom right, var(--dark-pink), var(--light-pink));
+}
+
 
 a {
-    color: var(--dark-brown);
+    color: var(--cream);
+    font-weight: 900;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,7 +111,7 @@ footer {
 .content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -118,9 +125,14 @@ footer {
 /* =====================
     Sections LAYOUT
 ===================== */
+.core-proj-info, .project-middle, .proj-media {
+    padding: 16px;
+    border-radius: 30px;
+    background: linear-gradient(315deg, var(--light-green), var(--off-green));
+}
 
 .core-proj-info {
-
+    margin-top: 16px;
 }
 
 .project-middle {
@@ -134,6 +146,7 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 16px;
+    margin-bottom: 16px;
 }
 
 /* =====================
@@ -170,12 +183,14 @@ footer {
 .clip-area, .photo-area {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
 }
 
 .clip-card, .photo-card {
     padding: 1rem;
     border: 2px solid var(--dark-pink);
     border-radius: 8px;
+    background: linear-gradient(180deg, var(--light-pink), var(--dark-pink));
     flex: 1 1 320px;
     min-width: 280px;
 }

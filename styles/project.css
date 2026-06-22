@@ -40,7 +40,7 @@ PROJECT LAYOUT
 
 /* Bottom section */
 
-.game-clips {
+.proj-media {
     width: 100%;
 }
 
@@ -51,7 +51,22 @@ PROJECT LAYOUT
     width: 100%;
 }
 
+.photo-area {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .clip-card {
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 8px;
+    flex: 1 1 320px;
+    min-width: 280px;
+}
+
+.photo-card {
     padding: 1rem;
     border: 1px solid;
     border-radius: 8px;

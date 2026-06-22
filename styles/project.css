@@ -1,3 +1,11 @@
+:root {
+    --dark-green: #595E48;
+    --medium-green: #919682;
+    --light-green: #C7CDBF;
+    --accent-pink: #EECFCA;
+    --accent-brown: #C7A491;
+}
+
 /* =====================
     PAGE CONTAINER
 ===================== */

@@ -96,6 +96,10 @@ nav > a {
     color: var(--light-green);
 }
 
+nav a:hover {
+    color: var(--light-pink);
+}
+
 footer {
     width: 100%;
     padding: 16px 0;

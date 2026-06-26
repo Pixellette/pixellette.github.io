@@ -147,7 +147,6 @@ footer {
 .proj-media {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 16px;
 }
@@ -199,6 +198,8 @@ footer {
 }
 
 .clip-card iframe {
+    display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
+    height: auto;
 }

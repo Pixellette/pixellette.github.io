@@ -40,10 +40,10 @@ General Settings
     background: linear-gradient(to bottom right, var(--dark-pink), var(--dark-brown));
     text-decoration: none;
 }
+
 .button:hover{
     background: linear-gradient(to bottom right, var(--dark-pink), var(--light-pink));
 }
-
 
 a {
     color: var(--cream);
@@ -53,6 +53,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    color: var(--dark-pink);
 }
 
 h1 {
@@ -61,17 +62,23 @@ h1 {
 }
 
 h2{
-    color: var(--dark-pink);
     font-size: 36px;
 }
 
 h3 {
-    color: var(--dark-brown);
     font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 b {
     color: var(--dark-brown);
+}
+
+i {
+    color: var(--medium-green);
 }
 
 ul {
@@ -155,6 +162,30 @@ footer {
     flex-direction: column;
     gap: 16px;
     margin-bottom: 16px;
+}
+
+/* =====================
+    Proj Top 
+===================== */
+.core-proj-info > h1 {
+    text-align: center;
+}
+
+.proj-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.proj-lang, .proj-tools, .proj-people {
+
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 /* =====================

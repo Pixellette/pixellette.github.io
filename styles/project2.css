@@ -124,7 +124,7 @@ footer {
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 24px;
     background: linear-gradient(315deg, var(--off-green), var(--light-green));
@@ -238,5 +238,11 @@ footer {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
     height: auto;
 }

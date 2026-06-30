@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/project2.css" rel="stylesheet" />
+    <title>Her Rhythum</title>
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <a href="../../index.html">Back to Home</a>
+    </nav>
+    <div class="content">
+        <!-- Core Project Info -->
+        <section class="core-proj-info">
+            <h1>Her Rhythum</h1>
+            
+            <article class="proj-about">
+                <h2>About the Project</h2>
+                <p>
+                    Her Rhythm is an Android mobile application developed as part of the Mobile Application Development paper at Massey University. The concept and overall design were created by myself in collaboration with another student.
+                    </br>
+                    The project was inspired by research showing that menstrual cycles can influence factors such as energy levels, exercise performance, and body weight. Rather than focusing on population-wide trends, the goal was to explore how a mobile application could help individual users better understand the relationship between their own cycle and their personal health data.
+                </p>
+            </article>
+
+            <div class="proj-details">
+                <article class="proj-lang">
+                    <h2>Languages used</h2>
+                    <ul>
+                        <li>
+                            <b>Kotlin</b>
+                            <p>Primary programming language used to implement the application's logic, UI, and data handling.</p>
+                        </li>
+                        <li>
+                            <b>SQL</b>
+                            <p>Used through Room Database queries to store, retrieve, and filter application data.</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="People">
+                    <h2>People Involved</h2>
+                    This project was done as a 2-person project for a university assignment. </br>
+                    The team:
+                    <ul>
+                        <li>Brook Pugmire</li>
+                        <li>Lewis Hall</li>
+                    </ul>
+                </article>
+
+                <article class="proj-tools">
+                    <h2>Tools & Technologies</h2>
+                    <ul>
+                        <li>
+                            <b>Git & GitHub</b>
+                            <p>Used for Version Control</p>
+                        </li>
+                        <li>
+                            <b>Android Studio & Android SDK</b>
+                            <p>
+                                Used to develop, build, debug, and test the Android application.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Jetpack Compose & Material Design 3</b>
+                            <p>
+                                Used to build the application's user interface using modern Android development practices.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Room Database</b>
+                            <p>
+                                Used to manage and persist application data locally on the device.
+                            </p>
+                        </li>
+                        <li>
+                            <b>MVVM Architecture</b>
+                            <p>Used to separate the user interface, business logic, and data layers for better maintainability.</p>
+                        </li>
+                        <li>
+                            <b>Kotlin Coroutines & Flow</b>
+                            <p>Used to perform asynchronous operations and react to data changes efficiently.</p>
+                        </li>
+                        <li>
+                            <b>Gradle</b>
+                            <p>Used to manage project dependencies and automate the build process.</p>
+                        </li>
+                        <li>
+                            <b>JUnit & Espresso</b>
+                            <p>Used to create and run automated unit and user interface tests.</p>
+                        </li>
+                        <li>
+                            <b>Vico Charts</b>
+                            <p>Used to generate graphical data visualisations within the applicatio</p>
+                        </li>
+                    </ul>
+                </article>
+
+
+            </div>
+
+            <article class="proj-links">
+                <h2>Project Links</h2>
+                <div class="links">
+                    <a href="https://github.com/Pixellette/159336_Assignment2_Cycles" class="button"> GitHub Repository </a>
+                </div>
+            </article>
+        </section>
+    
+        <!-- Middle Section:Project Features and Functionality -->
+        <section class="project-middle">
+
+            <!-- Overview -->
+            <article class="overview full-row">
+                <h2>Application Overview</h2>
+                <p>
+                    One of the ideas that inspired this project was the observation that women are often told that their menstrual cycle affects things like energy levels, exercise performance, and weight fluctuations. While there is research supporting many of these claims, every individual is different, and population-level trends do not always reflect personal experience.
+                    </br>
+                    Her Rhythm was created as a way for users to explore those relationships for themselves. By combining menstrual cycle, weight, and exercise data, the application allows users to build their own dataset and look for patterns over time. Rather than drawing conclusions on the user's behalf, the goal is to provide tools that help users better understand how their own body responds throughout different stages of their cycle.
+                    </br>
+                    From a software development perspective, this project provided experience designing and implementing a complete Android application using modern development practices. The project involved creating an intuitive user interface, managing persistent user data, implementing cycle-based calculations, and developing custom data visualisations to present information in a meaningful and accessible way. Particular attention was given to creating a clear user experience, ensuring data remained consistent across the application, and presenting complex information in a format that encouraged exploration and understanding.
+                </p>
+            </article>
+    
+            <!--Screens-->
+            <article class="screens half-row">
+                <h2>Application Screens</h2>
+                <ul>
+                    <li>
+                        <h3>Home Screen</h3>
+                        <ul>
+                            <li>Shows the user's <b>current cycle</b>, predicted dates, and recent weight trend.</li>
+                            <li>Provides quick access to the main tracking and graph screens.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Add Period Screen</h3>
+                        <ul>
+                            <li>Allows users to record whether they were <b>bleeding</b> or <b>not bleeding</b> on a selected date.</li>
+                            <li>Updates cycle calculations and handles changes to existing entries.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Add Weight Screen</h3>
+                        <ul>
+                            <li>Allows users to record a weight value for a selected date.</li>
+                            <li>Updates stored data so weight graphs reflect new entries.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Add Exercise Screen</h3>
+                        <ul>
+                            <li>Allows users to log exercise machine, sets, reps, weight, and date.</li>
+                            <li>Stores exercise records for later progress tracking and graphing.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>View Weight Info Screen</h3>
+                        <ul>
+                            <li>Displays weight trends graphically, either <b>by cycle</b> or across a <b>custom date range</b>.</li>
+                            <li>Uses cycle phase bands to show weight data in menstrual-cycle context.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>View Exercise Info Screen</h3>
+                        <ul>
+                            <li>Displays exercise progress over time for a selected machine.</li>
+                            <li>Uses total load to represent training effort across logged sets, reps, and weights.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Top Bar</h3>
+                        <ul>
+                            <li>Shows the current page title and provides dropdown navigation.</li>
+                            <li>Includes access to the debug screen for testing and demonstration purposes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>DEBUG & Demo Data Screen</h3>
+                        <ul>
+                            <li>Provides tools for inserting sample period, weight, and exercise data.</li>
+                            <li>Includes options to clear stored data and demonstrate graph features quickly.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+    
+            <!--Project features-->
+            <article class="proj-features half-row">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        <h3>Menstrual Cycle Tracking</h3>
+                        <p>
+                            Users can record bleeding days, allowing the application to identify menstrual cycles, calculate cycle lengths, and estimate future cycle information.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Weight Tracking & Analysis</h3>
+                        <p>
+                            Users can record weight measurements over time and visualise trends both within individual cycles and across custom date ranges.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Exercise Tracking</h3>
+                        <p>
+                            Users can log exercise sessions, including machine used, sets, repetitions, and weight lifted, creating a historical record of training performance.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Cycle-Aware Data Visualisation</h3>
+                        <p>
+                            Weight data is displayed alongside menstrual cycle phases, helping users explore potential relationships between their cycle and health metrics.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Exercise Performance Monitoring</h3>
+                        <p>
+                            Exercise records can be viewed over time and filtered by machine, allowing users to track changes in performance and training load.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Custom Date Range Reporting</h3>
+                        <p>
+                            Users can generate graphs for selected date ranges rather than being restricted to predefined cycle periods.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Local Data Storage</h3>
+                        <p>
+                            All user-entered period, weight, and exercise data is stored locally on the device using a Room database.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    
+        <!-- MEDIA SECTION-->
+        <section class="proj-media">
+            <!--Photos-->
+            <article class="photo-section">
+                <h2>Photos</h2>
+                <div class="photo-area">
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/homescreen.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/add-period-screen.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/add-weight-screen.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/add-exercise-screen.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/show-menu.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/view-weight-screen.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/view-weight-custom.png" alt="">
+                    </div>
+                    <div class="photo-card">
+                        <img src="../../images/HerRythumImages/view-exercise-screen.png" alt="">
+                    </div>
+                </div>
+            </article>
+    
+            <!-- Clips -->
+            <article class="clip-section">
+                <h2>Game Clips</h2>
+                <div class="clip-area">
+                    <div class="clip-card">
+                        <p>Example video</p>
+                        <iframe  src="https://www.youtube.com/embed/ZGXu5ZgC-KY?si=18mwB0F8hN-mtJ9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
+    
+        </section>
+    
+    </div>
+    <footer>
+        <p> Made by Pixellette - 2026 </p>
+    </footer>
+    
+</body>
+</html>
